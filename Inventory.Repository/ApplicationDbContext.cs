@@ -13,8 +13,9 @@ namespace Inventory.Repository
     {
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
+
         }
-        public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<AppUser> AppUsers { get; set;}
         public DbSet<Bank>  Banks { get; set; }
         public DbSet<Bill> Bills { get; set; }
         public DbSet<BillType> BillTypes { get; set; }
@@ -41,7 +42,13 @@ namespace Inventory.Repository
         public DbSet<SalesOrder> SalesOrders { get; set; }
         public DbSet<SalesType> SalesTypes { get; set; }
         public DbSet<SalesOrderLine> SalesOrderLines { get; set; }
-
+        public DbSet<Shipment> Shipments { get; set; }
+        public DbSet<ShipmentType> ShipmentTypes { get; set; }
+        public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<Vendor> Vendors { get; set; }
+        public DbSet<VendorType> VendorTypes { get; set; }
+        public DbSet<Warehouse> Warehouses { get; set; }
+        
 
 
     }
