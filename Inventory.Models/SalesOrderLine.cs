@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inventory.Models
 {
-    public class SalsesOrderLine
+    public class SalesOrderLine
     {
         public int Id { get; set; }
         public int SalesOrderId { get; set; }

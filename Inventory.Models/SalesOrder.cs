@@ -23,8 +23,8 @@ namespace Inventory.Models
         public double Discount { get; set; }
         public double Tax { get; set; }
         public double Total { get; set; }
-        public ICollection<SalsesOrderLine> SalsesOrderLines { get; set; } 
-            = new HashSet<SalsesOrderLine>();
+        public ICollection<SalesOrderLine> SalesOrderLines { get; set; } 
+            = new HashSet<SalesOrderLine>();
     }
 }
 
