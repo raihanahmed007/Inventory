@@ -7,11 +7,53 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Inventory.Utility\Inventory.Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Item\" />
+    <Folder Include="Pages\Invoice\" />
+    <Folder Include="Pages\Currency\" />
+    <Folder Include="Pages\Brandch\" />
+    <Folder Include="Pages\Brand\" />
+    <Folder Include="Pages\BillType\" />
+    <Folder Include="Pages\Bank\" />
+    <Folder Include="Pages\Warehouse\" />
+    <Folder Include="Pages\VendorType\" />
+    <Folder Include="Pages\Vendor\" />
+    <Folder Include="Pages\UserProfile\" />
+    <Folder Include="Pages\ShipmentType\" />
+    <Folder Include="Pages\Shipment\" />
+    <Folder Include="Pages\SalesType\" />
+    <Folder Include="Pages\SalesOrderLine\" />
+    <Folder Include="Pages\SalesOrder\" />
+    <Folder Include="Pages\ReceiveNote\" />
+    <Folder Include="Pages\PurchaseType\" />
+    <Folder Include="Pages\PurchaseOrderLine\" />
+    <Folder Include="Pages\PurchaseOrder\" />
+    <Folder Include="Pages\ProductType\" />
+    <Folder Include="Pages\Product\" />
+    <Folder Include="Pages\PaymentVoucher\" />
+    <Folder Include="Pages\PaymentType\" />
+    <Folder Include="Pages\PaymentReceive\" />
+    <Folder Include="Pages\Order\" />
+    <Folder Include="Pages\NumberSequence\" />
+    <Folder Include="Pages\MeasureUnit\" />
+    <Folder Include="Pages\InvoiceType\" />
+    <Folder Include="Pages\AppUser\" />
   </ItemGroup>
 
 </Project>

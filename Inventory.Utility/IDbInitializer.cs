@@ -11,7 +11,11 @@ namespace Inventory.Utility
     public interface IDbInitializer
     {
         void CreateSuperAdmin();
-        Task SendEmail(string FromEmail, string FromName,string Massage, string toEmail, string toName, string smtpUser, string smtpPassword, string smtpHost, string smtpPort, bool smtpSSL);
-        Task<string> UploadFile(List<IFormFile> files, IWebHostEnvironment env, string Directory);
+        Task SendEmail(string FromEmail, string subject, string FromName,
+            string Massage, string toEmail, string toName,
+            string smtpUser, string smtpPassword, 
+            string smtpHost, string smtpPort, bool smtpSSL);
+        Task<string> UploadFile(List<IFormFile> files,
+            IWebHostEnvironment env, string Directory);
     }
 }
