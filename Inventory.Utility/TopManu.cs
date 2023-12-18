@@ -72,12 +72,12 @@ namespace Inventory.Utility
             public const string PageModelName = "Customer";
             public const string ActionName = "Index";
         }
-        public static class CustomerType
+        public static class CustomersType
         {
-            public const string PageName = "CustomerType";
-            public const string RoleName = "CustomerType";
-            public const string Path = "/CustomerType/Index";
-            public const string PageModelName = "CustomerType";
+            public const string PageName = "CustomersType";
+            public const string RoleName = "CustomersType";
+            public const string Path = "/CustomersType/Index";
+            public const string PageModelName = "CustomersType";
             public const string ActionName = "Index";
         }
         public static class Invoice

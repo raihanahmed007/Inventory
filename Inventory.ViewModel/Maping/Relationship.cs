@@ -10,7 +10,7 @@ namespace Inventory.ViewModel.Maping
 {
     public static class Relationship
     { 
-        public static IEnumerable<CustomerTypeListViewModel> ModelToVM(this IEnumerable<CustomerType> customerType)
+        public static IEnumerable<CustomerTypeListViewModel> ModelToVM(this IEnumerable<CustomersType> customerType)
         {
             List<CustomerTypeListViewModel> list = new List<CustomerTypeListViewModel>();
             foreach (var ct in customerType)
