@@ -8,7 +8,7 @@ namespace Inventory.Utility.HelperClass
 {
     public class SuperAdmin
     {
-        public string Email { get; set; }
-        public string Password { get; set; }
+        public string? Email { get; set; }
+        public string? Password { get; set; }
     }
 }

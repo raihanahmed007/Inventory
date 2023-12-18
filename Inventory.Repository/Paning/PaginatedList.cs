@@ -1,4 +1,4 @@
-﻿using Inventory.ViewModel.Customer;
+﻿using Inventory.ViewModel.Customers;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

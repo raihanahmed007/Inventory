@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inventory.ViewModel.Customer
+namespace Inventory.ViewModel.Customers
 {
     public class CustomerTypeListViewModel
     {

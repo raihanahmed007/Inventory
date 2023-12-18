@@ -1,5 +1,5 @@
 ﻿using Inventory.Repository.Paning;
-using Inventory.ViewModel.Customer;
+using Inventory.ViewModel.Customers;
 using System;
 using System.Collections.Generic;
 using System.Linq;

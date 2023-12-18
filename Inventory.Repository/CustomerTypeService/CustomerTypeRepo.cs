@@ -1,6 +1,5 @@
-﻿using DocumentFormat.OpenXml.Wordprocessing;
-using Inventory.Repository.Paning;
-using Inventory.ViewModel.Customer;
+﻿using Inventory.Repository.Paning;
+using Inventory.ViewModel.Customers;
 using Inventory.ViewModel.Maping;
 using System;
 using System.Collections.Generic;

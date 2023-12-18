@@ -1,5 +1,5 @@
 ﻿using Inventory.Models;
-using Inventory.ViewModel.Customer;
+using Inventory.ViewModel.Customers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +22,30 @@ namespace Inventory.ViewModel.Maping
                     Description = ct.Description,
                 });
                 
+            }
+            return list;
+
+        }
+        public static IEnumerable<CustomerListViewModel>
+            CustomerModelToVM(this IEnumerable<Customer> customers)
+        {
+            List<CustomerListViewModel> list = new List<CustomerListViewModel>();
+            foreach (var c in customers)
+            {
+                list.Add(new CustomerListViewModel()
+                {
+                   CustomerId = c.CustomerId,
+                   CustomerName = c.CustomerName,
+                   City = c.City,
+                   State = c.State,
+                   ContactPerson= c.ContactPerson,
+                   CustomerTypeId = c.CustomerTypeId,
+                   ZipCode = c.ZipCode,
+                   Address = c.Address,
+                   Email = c.Email,
+                   Phone = c.Phone
+                });
+
             }
             return list;
 
