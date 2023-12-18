@@ -1,4 +1,5 @@
 ﻿using Inventory.Models;
+using Inventory.ViewModel.Bills;
 using Inventory.ViewModel.Customers;
 using System;
 using System.Collections.Generic;
@@ -44,6 +45,44 @@ namespace Inventory.ViewModel.Maping
                    Address = c.Address,
                    Email = c.Email,
                    Phone = c.Phone
+                });
+
+            }
+            return list;
+
+        }
+        public static IEnumerable<BillTypeListViewModel> ModelToVM(this IEnumerable<BillType> billType)
+        {
+            List<BillTypeListViewModel> list = new List<BillTypeListViewModel>();
+            foreach (var bt in billType)
+            {
+                list.Add(new BillTypeListViewModel()
+                {
+                   BillTypesId= bt.BillTypesId,
+                   BillTypeName = bt.BillTypeName,
+                   Description = bt.Description
+                });
+
+            }
+            return list;
+
+        }
+        public static IEnumerable<BillListViewModel>
+           BillModelToVM(this IEnumerable<Bill> bills)
+        {
+            List<BillListViewModel> list = new List<BillListViewModel>();
+            foreach (var b in bills)
+            {
+                list.Add(new BillListViewModel()
+                {
+                    BillId = b.BillId,
+                    BillName = b.BillName,
+                    GoodsReceiveNoteId = b.GoodsReceiveNoteId,
+                    VendorDoNumber = b.VendorDoNumber,  
+                    VendorInvoiceNumber = b.VendorInvoiceNumber,    
+                    BillDate = b.BillDate,
+                    BillDueDate = b.BillDueDate,
+                    BillTypeId = b.BillTypeId
                 });
 
             }
