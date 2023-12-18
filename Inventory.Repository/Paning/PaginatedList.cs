@@ -29,6 +29,8 @@ namespace Inventory.Repository.Paning
                 (pageIndex - 1) * pageSize)
                 .Take(pageSize).ToListAsync();
             return new PaginatedList<T>(items, count, pageIndex, pageSize);
-        }       
+        }
+
+       
     }
 }

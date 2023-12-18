@@ -20,10 +20,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Inventory.Utility\Inventory.Utility.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Pages\Item\" />
     <Folder Include="Pages\Invoice\" />
     <Folder Include="Pages\Currency\" />
@@ -54,6 +50,10 @@
     <Folder Include="Pages\MeasureUnit\" />
     <Folder Include="Pages\InvoiceType\" />
     <Folder Include="Pages\AppUser\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Inventory.Utility\Inventory.Utility.csproj" />
   </ItemGroup>
 
 </Project>
