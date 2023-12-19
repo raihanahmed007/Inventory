@@ -1,6 +1,7 @@
 ﻿using Inventory.Models;
 using Inventory.ViewModel.Bills;
 using Inventory.ViewModel.Customers;
+using Inventory.ViewModel.Products;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,8 +68,7 @@ namespace Inventory.ViewModel.Maping
             return list;
 
         }
-        public static IEnumerable<BillListViewModel>
-           BillModelToVM(this IEnumerable<Bill> bills)
+        public static IEnumerable<BillListViewModel> BillModelToVM(this IEnumerable<Bill> bills)
         {
             List<BillListViewModel> list = new List<BillListViewModel>();
             foreach (var b in bills)
@@ -87,7 +87,43 @@ namespace Inventory.ViewModel.Maping
 
             }
             return list;
+        }
+        public static IEnumerable<ProductTypeListViewModel> ModelToVM(this IEnumerable<ProductType> productTypes)
+        {
+            List<ProductTypeListViewModel> list = new List<ProductTypeListViewModel>();
+            foreach (var pt in productTypes)
+            {
+                list.Add(new ProductTypeListViewModel()
+                {
+                   ProductTypeId = pt.ProductTypeId,
+                   ProductTypeName = pt.ProductTypeName,
+                   Description = pt.Description
+                });
 
+            }
+            return list;
+        }
+        public static IEnumerable<ProductListViewModel> ModelToVM(this IEnumerable<Product> products)
+        {
+            List<ProductListViewModel> list = new List<ProductListViewModel>();
+            foreach (var p in products)
+            {
+                list.Add(new ProductListViewModel()
+                {
+                    ProductId = p.ProductId,
+                    ProductName = p.ProductName,
+                    ProductCode = p.ProductCode,
+                    ProductImage = p.ProductImage,
+                    BuyingPrice = p.BuyingPrice,
+                    SellingPrice = p.SellingPrice,
+                    BarCode = p.BarCode,
+                    BranchId = p.BranchId,
+                    Description = p.Description,
+                    CurrencyId = p.CurrencyId,
+                    MeasureUnitId = p.MeasureUnitId
+                });
+            }
+            return list;
         }
     }
 }
