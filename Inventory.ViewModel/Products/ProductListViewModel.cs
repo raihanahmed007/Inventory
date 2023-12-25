@@ -26,4 +26,4 @@ namespace Inventory.ViewModel.Products
         public int CurrencyId { get; set; }
     }
 }
-}
+

@@ -12,7 +12,9 @@ namespace Inventory.ViewModel.Bills
 
         public int BillTypesId { get; set; }
         [Required]
+        [Display(Name ="Bill Name")]
         public string BillTypeName { get; set; }
+        [Display(Name = "Bill Description")]
         public string Description { get; set; }
     }
 }

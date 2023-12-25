@@ -10,6 +10,11 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
@@ -20,12 +25,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Pages\BillType\" />
+    <Folder Include="Pages\Bill\" />
+    <Folder Include="Pages\CustomersType\" />
+    <Folder Include="Pages\Customer\" />
     <Folder Include="Pages\Item\" />
     <Folder Include="Pages\Invoice\" />
     <Folder Include="Pages\Currency\" />
     <Folder Include="Pages\Brandch\" />
     <Folder Include="Pages\Brand\" />
-    <Folder Include="Pages\BillType\" />
     <Folder Include="Pages\Bank\" />
     <Folder Include="Pages\Warehouse\" />
     <Folder Include="Pages\VendorType\" />
